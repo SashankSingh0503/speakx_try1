@@ -1,0 +1,58 @@
+/* Ensure the entire page is at least 100vh to cover full screen height */
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* App layout */
+  .App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make sure the app takes at least full viewport height */
+  }
+  
+  /* Basic styling for the footer */
+  .footer {
+    background-color: #ff6f00; /* Orange color */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto; /* Push footer to the bottom of the screen */
+  }
+  
+  .footer-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .right {
+    text-align: right;
+  }
+  
+  .bold-title {
+    font-weight: bold;
+    font-size: 38px;
+  }
+  
+  .company-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .footer-bottom {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  

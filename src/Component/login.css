@@ -1,0 +1,91 @@
+/* Signin.css */
+.signin-body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+  
+.form-container {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+  
+.form-heading {
+    font-size: 1.5em;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff7e5f, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.label {
+    display: block;
+    color: #e0e0e0;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+  
+.input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+    font-size: 1em;
+}
+  
+.button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(to right, #ff7e5f, white);
+    color: #121212;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.button-hover {
+    background-color: #2575fc;
+    transform: scale(1.05);
+}
+  
+.links {
+    text-align: center;
+    margin-top: 15px;
+}
+  
+.link {
+    color: #ff7e5f;
+    text-decoration: none;
+}
+  
+.link:hover {
+    text-decoration: underline;
+}
+  
+.link-text {
+    color: #e0e0e0;
+}
+
+/* Added styling to ensure fields are stacked vertically */
+.form-container form {
+    display: flex;
+    flex-direction: column; /* Ensure fields are stacked vertically */
+    gap: 15px; /* Add space between the fields */
+}

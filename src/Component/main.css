@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease;
+}
+
+.App.dark {
+  color: #fff;
+  background-color: #1e1e1e; 
+}
+
+.App {
+  color: #333;
+  background-color: #f4f0e1; 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+header.dark {
+  background-color: #222222;
+  border-bottom: 1px solid #444444;
+}
+
+header h1 {
+  font-size: 24px;
+  color: inherit;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  cursor: pointer;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+nav ul li.login {
+  margin-left: auto;
+}
+
+nav ul li:hover {
+  color: #007bff;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button.dark {
+  background-color: #444444;
+  color: black;
+}
+
+button.dark:hover {
+  background-color: #666666;
+}
+
+main {
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+main.dark {
+  background-color: #1c1c1c;
+  color: black;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+form input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+form input.dark {
+  background-color: #333333;
+  color: #fff;
+  border-color: #555555;
+}
+
+form button {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #28a745;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+form button.dark {
+  background-color: #444444;
+  color: #fff;
+}
+
+form button.dark:hover {
+  background-color: #666666;
+}
+
+ul.results {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  display: block; 
+}
+
+ul.results li {
+  width: 100%; 
+  height: auto;
+  background-color: #d8d0c7;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.App.dark ul.results li {
+  background-color: #444; 
+}
+
+ul.results li.expanded {
+  background-color: #222;
+  padding: 30px;
+}
+
+ul.results li.expanded .title,
+ul.results li.expanded .question {
+  font-weight: bold;
+}
+
+ul.results li.expanded .details {
+  margin-top: 15px;
+  color: #ddd;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination button.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  color: #fff;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  form {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+  }
+
+  form input {
+      width: 80%;
+  }
+
+  ul.results li {
+      width: 100%; 
+      padding: 15px;
+  }
+
+  ul.results li.expanded {
+      width: 100%; 
+  }
+}

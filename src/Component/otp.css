@@ -1,0 +1,116 @@
+#oo {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+}
+
+#h1 {
+    background: linear-gradient(to right, orange, white);
+    -webkit-background-clip: text;
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav {
+    margin: 15px 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+
+.tile {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.tile h2 {
+    margin: 0 0 15px 0;
+}
+
+.otp-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+i.nput[type="text"] {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    text-align: center;
+    font-size: 1.5em;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.input[type="text"]:focus {
+    outline: none;
+    border-color: #ff8c00;
+}
+
+.input[type="submit"] {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.input[type="submit"]:hover {
+    background-color: #45a049;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    nav a {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+
+    input[type="text"] {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2em;
+    }
+}
